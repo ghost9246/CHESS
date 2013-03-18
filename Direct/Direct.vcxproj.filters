@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Program">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Program\Direct">
+      <UniqueIdentifier>{607f9352-bbb8-48d5-b7f8-b03afe65385b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Window">
+      <UniqueIdentifier>{b414ecf6-0303-4b30-8c29-4c57c7c74212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\MouseManager">
+      <UniqueIdentifier>{3233833d-e4d5-4b44-9a47-1522ed937c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Draw">
+      <UniqueIdentifier>{3e554848-1d84-42a6-9177-c50601d9e2c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{7b5eee52-55f4-4622-b29b-06536e19bd4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameState">
+      <UniqueIdentifier>{b6dbbef6-3ab3-45e8-95c2-400bd644253d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Unit">
+      <UniqueIdentifier>{4284fcb3-9851-404f-a4de-df093e21f131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Unit\Unit">
+      <UniqueIdentifier>{1e8f7f83-c2ee-4ca1-8bea-057369be6533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Sound">
+      <UniqueIdentifier>{2adebb91-0b8c-46b3-bf3a-538ab7f0645c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameState\Prepare">
+      <UniqueIdentifier>{02992665-5c58-4f51-b11e-f5ea8a404b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameState\Play">
+      <UniqueIdentifier>{38bd4ec2-b0a4-4619-94e1-392c02956c20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameState\Board">
+      <UniqueIdentifier>{eb71b695-cf55-42ce-96bf-697e93cf02a5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Direct.cpp">
+      <Filter>Program\Direct</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseManager.cpp">
+      <Filter>Program\MouseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
+      <Filter>Program\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Win.cpp">
+      <Filter>Program\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Program</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Game\Unit\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Program\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Prepare.cpp">
+      <Filter>Game\GameState\Prepare</Filter>
+    </ClCompile>
+    <ClCompile Include="Play.cpp">
+      <Filter>Game\GameState\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="StateManager.cpp">
+      <Filter>Game\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitManager.cpp">
+      <Filter>Game\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardManager.cpp">
+      <Filter>Game\GameState\Board</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Direct.h">
+      <Filter>Program\Direct</Filter>
+    </ClInclude>
+    <ClInclude Include="Win.h">
+      <Filter>Program\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseManager.h">
+      <Filter>Program\MouseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.h">
+      <Filter>Program\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Game\Unit\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Program\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Prepare.h">
+      <Filter>Game\GameState\Prepare</Filter>
+    </ClInclude>
+    <ClInclude Include="Play.h">
+      <Filter>Game\GameState\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>Game\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitManager.h">
+      <Filter>Game\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardManager.h">
+      <Filter>Game\GameState\Board</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\근황.txt" />
+  </ItemGroup>
+</Project>

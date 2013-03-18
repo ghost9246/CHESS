@@ -1,0 +1,67 @@
+#include "StdAfx.h"
+#pragma once
+
+enum TEXTURE
+{
+	MAIN_TITLE,		// 0
+	CHESSBOARD,
+	CLASSIC_BUTTON,
+	RANGED_BUTTON,
+	ELIMINATION_BUTTON,
+	CLASSIC_SYMBOL,
+	RANGED_SYMBOL,
+	ELIMINATION_SYMBOL,
+	START_BUTTON,
+	TURN_DISPLAY,
+	UNIT_MOVE,			// 10
+	UNIT_ATTACK,
+	TOP_WIN,
+	BOTTOM_WIN,
+	INFORECT,
+	BLACK_PAWN,
+	BLACK_RUCK,
+	BLACK_KNIGHT,
+	BLACK_BISHOP,
+	BLACK_QUEEN,
+	BLACK_KING,			// 20
+	WHITE_PAWN,
+	WHITE_RUCK,
+	WHITE_KNIGHT,
+	WHITE_BISHOP,
+	WHITE_QUEEN,
+	WHITE_KING,
+	RED_PAWN,
+	RED_RUCK,
+	RED_KNIGHT,
+	RED_BISHOP,		// 30
+	RED_QUEEN,
+	RED_KING,
+	BLUE_PAWN,
+	BLUE_RUCK,
+	BLUE_KNIGHT,
+	BLUE_BISHOP,
+	BLUE_QUEEN,
+	BLUE_KING
+};
+
+class CDirect
+{
+public:
+	CDirect(HWND hWnd);
+	~CDirect(void);
+	LPDIRECT3DTEXTURE9 m_aTextureArray[40];
+	static CDirect*	m_pDirect;
+	static CDirect* GetInstance(HWND hWnd = NULL);
+	void BeginDraw();
+	void EndDraw();
+	void Init();
+	LPD3DXSPRITE GetSprite();
+	LPDIRECT3DTEXTURE9 GetTexture(int iTEXTURE);
+
+private:
+	LPDIRECT3D9			m_pD3D;
+	LPDIRECT3DDEVICE9	m_pd3dDevice;
+	LPD3DXSPRITE		m_pSprite;
+	LPDIRECT3DTEXTURE9 CreateTexture(LPDIRECT3DTEXTURE9* ppTexture, TCHAR szFileName[], int iWidth, int iHeight, D3DCOLOR ColorKey);
+	HWND m_hWnd;
+};
